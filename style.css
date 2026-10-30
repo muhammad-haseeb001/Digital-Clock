@@ -1,0 +1,117 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:
+        linear-gradient(rgba(3, 9, 22, 0.25), rgba(3, 9, 22, 0.25)),
+        url("bi.png");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock .c1 {
+    display: flex;
+    gap: 10px;
+}
+
+.clock .c1 h1 {
+    background-color: transparent;
+    font-size: 60px;
+    color: white;
+}
+
+.clock .c1 .ampm {
+    padding-top: 40px;
+    font-size: 16px;
+    color: #9ecbff;
+}
+
+.clock .c3 {
+    margin-top: 25px;
+}
+
+.clock .c3 p {
+    font-size: 16px;
+    color: #cbd5e1;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        min-height: 100vh;
+        height: 100dvh;
+        padding: 15px;
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    .clock {
+        width: 100%;
+        max-width: 400px;
+        padding: 35px 15px;
+        border-radius: 22px;
+    }
+
+    .clock .c1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: nowrap;
+    }
+
+    .clock .c1 h1 {
+        font-size: clamp(30px, 10vw, 40px);
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+
+    .clock .c1 .ampm {
+        font-size: 14px;
+        padding-top: 20px;
+        white-space: nowrap;
+    }
+
+    .clock .c3 {
+        margin-top: 22px;
+    }
+
+    .clock .c3 p {
+        font-size: 9px;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .clock .c1 .colon {
+        font-size: 30px;
+    }
+}
+
+.clock {
+    padding: 45px 70px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 40px rgba(80, 160, 255, 0.15);
+}
+
+.colon {
+    color: #9ecbff;
+    font-size: 50px;
+    font-weight: bold;
+}
